@@ -154,26 +154,15 @@ export function renderLandingPage(catalog) {
   </head>
   <body>
     <header class="hero">
-      <div class="wrap">
-        <p class="eyebrow">Chin Christian Songbook</p>
-        <h1>KhrihfaHlabu</h1>
-        <p class="lede">A public collection of Chin Christian hymns, prepared for Tonic Studio.</p>
-        <div class="actions"><a class="button" href="./index.json">Open library index</a><a class="text-link" href="https://github.com/vanmualcin/KhrihfaHlabu">Contribute on GitHub</a></div>
-      </div>
+      <div class="wrap"><h1>Khrihfa Hlabu</h1></div>
     </header>
     <main class="wrap">
-      <section aria-labelledby="import-title">
-        <p class="section-number">01</p>
-        <h2 id="import-title">Import into Tonic Studio</h2>
-        <div class="instructions">
-          <article><h3>Import the complete library</h3><p>In Tonic Studio, choose import from URL and paste the library address. Tonic Studio will read every hymn URL in the index.</p><div class="url"><code>${publicBaseUrl}/index.json</code></div></article>
-          <article><h3>Import one hymn</h3><p>Open a hymn from the catalog, copy its JSON address, and paste that address into Tonic Studio’s URL importer.</p><div class="url"><code>${sampleHymnUrl}</code></div></article>
-        </div>
-        <p class="note">Remote URL import is planned for Tonic Studio. Until it is available, download an individual JSON file and use Tonic Studio’s file importer.</p>
+      <section class="import-card" aria-labelledby="import-title">
+        <h2 id="import-title">Import the complete library</h2>
+        <p>In Tonic Studio, choose import from URL and paste the library address. Tonic Studio will read every hymn URL in the index.</p>
+        <div class="url"><code>${publicBaseUrl}/index.json</code></div>
       </section>
-      <section aria-labelledby="catalog-title">
-        <p class="section-number">02</p>
-        <div class="catalog-heading"><div><h2 id="catalog-title">Hymn catalog</h2><p>${catalog.length} ${catalog.length === 1 ? 'hymn' : 'hymns'} available</p></div></div>
+      <section aria-label="Hymn catalog">
         <div class="table-wrap"><table>
           <thead><tr><th scope="col">Hymn #</th><th scope="col">Title</th><th scope="col">Composer</th><th scope="col">Doh</th><th scope="col">Language</th></tr></thead>
           <tbody>
@@ -182,7 +171,6 @@ ${rows}
         </table></div>
       </section>
     </main>
-    <footer><div class="wrap"><p>KhrihfaHlabu means “Christian Songbook” in Chin.</p><p>Hymn rights may vary. See each hymn’s metadata.</p></div></footer>
   </body>
 </html>
 `
