@@ -1,36 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://khrihfahlabu.mualcin.com/schemas/library.schema.json",
-  "title": "Tonic Studio library index",
-  "type": "object",
-  "required": ["format", "schemaVersion", "name", "description", "updatedAt", "hymns"],
-  "properties": {
-    "format": { "const": "tonic-studio-library" },
-    "schemaVersion": { "const": 1 },
-    "name": { "type": "string", "minLength": 1, "maxLength": 200 },
-    "description": { "type": "string", "minLength": 1, "maxLength": 1000 },
-    "language": { "type": "string", "minLength": 2, "maxLength": 35 },
-    "updatedAt": { "type": "string", "format": "date-time" },
-    "hymns": {
-      "type": "array",
-      "maxItems": 100000,
-      "items": {
-        "type": "object",
-        "required": ["id", "title", "language", "revision", "url"],
-        "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 120 },
-          "title": { "type": "string", "minLength": 1, "maxLength": 300 },
-          "number": { "type": "integer", "minimum": 1 },
-          "language": { "type": "string", "minLength": 2, "maxLength": 35 },
-          "revision": { "type": "integer", "minimum": 1 },
-          "url": {
-            "type": "string",
-            "pattern": "^(?:\\./hymns/[a-z0-9]+(?:-[a-z0-9]+)*\\.json|https?://[^\\s]+)$"
-          }
-        },
-        "additionalProperties": false
-      }
-    }
-  },
-  "additionalProperties": false
+  "title": "KhrihfaHlabu hymn URL index",
+  "description": "A deterministic list of absolute HTTPS URLs for Tonic Studio hymn documents.",
+  "type": "array",
+  "uniqueItems": true,
+  "maxItems": 100000,
+  "items": {
+    "type": "string",
+    "pattern": "^https://khrihfahlabu\\.mualcin\\.com/hymns/[a-z0-9]+(?:-[a-z0-9]+)*\\.json$"
+  }
 }

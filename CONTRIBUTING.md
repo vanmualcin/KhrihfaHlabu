@@ -23,7 +23,7 @@ npm run check:index
 npm test
 ```
 
-Run `build:index` after adding, renaming, or removing a hymn, then commit `index.json`. Validation rejects malformed JSON, unsupported score versions, invalid score structures, unsafe paths and URL schemes, duplicate catalog IDs or URLs, missing targets, and orphaned hymn files.
+Run `build:index` after adding, renaming, or removing a hymn, then commit both generated files: `index.json` and `index.html`. Validation rejects malformed JSON, unsupported score versions, invalid score structures, unsafe or unexpected URLs, duplicate URLs, missing targets, and orphaned hymn files.
 
 ## Pull requests and corrections
 

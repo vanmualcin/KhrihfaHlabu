@@ -3,7 +3,7 @@ import { mkdtemp, rm, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
-import { buildLibrary, indexIntegrityErrors, readJson, root, serialize, sortCatalog, validators } from '../scripts/lib.mjs'
+import { buildCatalog, buildLibrary, indexIntegrityErrors, readJson, renderLandingPage, root, serialize, sortCatalog, validators } from '../scripts/lib.mjs'
 
 const examplePath = path.join(root, 'hymns/example-hymn.json')
 
@@ -26,21 +26,20 @@ test('invalid hymn structure and executable URL schemes fail schema validation',
   const hymn = await readJson(examplePath)
   assert.equal(validate.hymn({ ...hymn, parts: [] }), false)
   const library = await readJson(path.join(root, 'index.json'))
-  library.hymns[0].url = 'javascript:alert(1)'
+  library[0] = 'javascript:alert(1)'
   assert.equal(validate.library(library), false)
 })
 
-test('duplicate IDs and URLs are detected', () => {
-  const entry = { id: 'same', url: './hymns/a.json' }
-  const errors = indexIntegrityErrors({ hymns: [entry, entry] }, ['/tmp/a.json'])
-  assert(errors.some((error) => error.includes('duplicate hymn id')))
+test('duplicate URLs are detected', () => {
+  const url = 'https://khrihfahlabu.mualcin.com/hymns/a.json'
+  const errors = indexIntegrityErrors([url, url], ['/tmp/a.json'])
   assert(errors.some((error) => error.includes('duplicate hymn URL')))
 })
 
 test('missing targets and orphaned files are detected', () => {
-  const missing = indexIntegrityErrors({ hymns: [{ id: 'missing', url: './hymns/missing.json' }] }, [])
+  const missing = indexIntegrityErrors(['https://khrihfahlabu.mualcin.com/hymns/missing.json'], [])
   assert(missing.some((error) => error.includes('missing target')))
-  const orphan = indexIntegrityErrors({ hymns: [] }, ['/tmp/orphan.json'])
+  const orphan = indexIntegrityErrors([], ['/tmp/orphan.json'])
   assert(orphan.some((error) => error.includes('orphaned hymn file')))
 })
 
@@ -57,4 +56,11 @@ test('catalog sorting is deterministic by number, title, then id', () => {
 test('generated index matches the committed index exactly', async () => {
   assert.equal(serialize(await buildLibrary()), serialize(await readJson(path.join(root, 'index.json'))))
   assert.notEqual(serialize({ ...(await buildLibrary()), name: 'Mismatch' }), serialize(await readJson(path.join(root, 'index.json'))))
+})
+
+test('landing page is generated from escaped hymn metadata', async () => {
+  const html = renderLandingPage(await buildCatalog())
+  assert.match(html, /Example Hymn/)
+  assert.match(html, /<th scope="col">Doh<\/th>/)
+  assert.equal(html.includes('<script>'), false)
 })
