@@ -19,13 +19,13 @@ The landing page provides this as a one-click import action. Its `index.json` is
 https://khrihfahlabu.mualcin.com/hymns/1-pathian-cu-thangthat-si-ko-seh.json
 ```
 
-Tonic Studio recognizes `import_by_index` for a library URL and `import` for an individual hymn URL.
+Tonic Solfege recognizes `import_by_index` for a library URL and `import` for an individual hymn URL.
 
 ## Repository layout
 
-- `hymns/` contains import-compatible Tonic Studio version 2 score documents.
+- `hymns/` contains import-compatible Tonic Solfege version 2 score documents.
 - `schemas/` contains JSON Schema 2020-12 schemas for hymns and the URL index.
-- `index.json` is the generated array consumed by Tonic Studio.
+- `index.json` is the generated array consumed by Tonic Solfege.
 - `index.html` is the generated landing page and hymn catalog.
 - `styles.css` provides the landing page presentation.
 - `scripts/` contains validation and deterministic generation tooling.
@@ -48,7 +48,7 @@ npm test
 
 ## Adding or updating a hymn
 
-1. Export or create a valid Tonic Studio version 2 score.
+1. Export or create a valid Tonic Solfege version 2 score.
 2. Choose a permanent lowercase kebab-case ID, such as `pathian-ka-fak`.
 3. Save it as `hymns/pathian-ka-fak.json`; the filename is its identity and stable URL.
 4. Preserve the exported top-level `uuid`, and supply `metadata.title`, `metadata.composer`, and `metadata.language`. Add a numeric `metadata.hymnNumber` when known.
@@ -59,9 +59,9 @@ For ordinary corrections, keep the filename unchanged. Hymn numbers can vary bet
 
 ## Format compatibility
 
-The hymn schema follows Tonic Studio’s current `Score` interface and importer: `format: "tonic-studio"`, version 2, UUID identity, metadata, key and meter, SATB parts, note-level lyric syllables, sections/refrains, repeat directives, and playback order. The catalog’s “Doh” column displays each score’s `key` value.
+The hymn schema follows Tonic Solfege’s current `Score` interface and importer: `format: "tonic-solfege"`, version 2, UUID identity, metadata, key and meter, SATB parts, note-level lyric syllables, sections/refrains, repeat directives, and playback order. The catalog’s “Doh” column displays each score’s `key` value.
 
-Top-level catalog fields are not added to score documents because they are not part of Tonic Studio’s current format. The simplified library index intentionally contains only hymn URLs.
+Top-level catalog fields are not added to score documents because they are not part of Tonic Solfege’s current format. The simplified library index intentionally contains only hymn URLs.
 
 ## Copyright and licensing
 
