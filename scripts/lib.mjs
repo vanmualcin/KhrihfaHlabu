@@ -9,9 +9,9 @@ export const hymnDirectory = path.join(root, 'hymns')
 export const indexPath = path.join(root, 'index.json')
 export const landingPath = path.join(root, 'index.html')
 export const publicBaseUrl = 'https://khrihfahlabu.mualcin.com'
-export const tonicStudioImportBaseUrl = 'https://tonicsolfege.mualcin.com?import='
+export const tonicSolfegeImportBaseUrl = 'https://tonicsolfege.mualcin.com?import='
 export const libraryIndexUrl = `${publicBaseUrl}/index.json`
-export const tonicStudioIndexImportUrl = `https://tonicsolfege.mualcin.com?import_by_index=${libraryIndexUrl}`
+export const tonicSolfegeIndexImportUrl = `https://tonicsolfege.mualcin.com?import_by_index=${libraryIndexUrl}`
 const kebabPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export async function readJson(file) {
@@ -128,7 +128,7 @@ export async function buildLibrary(options) {
 export const serialize = (value) => `${JSON.stringify(value, null, 2)}\n`
 
 const hymnUrl = (id) => `${publicBaseUrl}/hymns/${id}.json`
-const tonicStudioImportUrl = (id) => `${tonicStudioImportBaseUrl}${hymnUrl(id)}`
+const tonicSolfegeImportUrl = (id) => `${tonicSolfegeImportBaseUrl}${hymnUrl(id)}`
 
 const escapeHtml = (value) => String(value)
   .replaceAll('&', '&amp;')
@@ -143,7 +143,7 @@ export function renderLandingPage(catalog) {
     : hymnUrl('1-example-hymn')
   const rows = catalog.map((entry) => `            <tr>
               <td>${escapeHtml(entry.number ?? '—')}</td>
-              <th scope="row"><a href="${tonicStudioImportUrl(entry.id)}">${escapeHtml(entry.title)}</a></th>
+              <th scope="row"><a href="${tonicSolfegeImportUrl(entry.id)}">${escapeHtml(entry.title)}</a></th>
               <td>${escapeHtml(entry.composer || 'Unknown')}</td>
               <td>${escapeHtml(entry.key)}</td>
               <td>${escapeHtml(entry.language)}</td>
@@ -166,7 +166,7 @@ export function renderLandingPage(catalog) {
       <section class="import-card" aria-labelledby="import-title">
         <h2 id="import-title">Import the complete library</h2>
         <p>Open the complete hymn library directly in Tonic Studio.</p>
-        <a class="import-button" href="${tonicStudioIndexImportUrl}">Import all hymns in Tonic Studio</a>
+        <a class="import-button" href="${tonicSolfegeIndexImportUrl}">Import all hymns in Tonic Studio</a>
         <div class="url"><code>${libraryIndexUrl}</code></div>
       </section>
       <section aria-label="Hymn catalog">
