@@ -15,7 +15,7 @@ https://khrihfahlabu.mualcin.com/index.json
 `index.json` is a plain JSON array containing the absolute HTTPS URL of every published hymn. To import one hymn, use its individual URL:
 
 ```text
-https://khrihfahlabu.mualcin.com/hymns/example-hymn.json
+https://khrihfahlabu.mualcin.com/hymns/1-pathian-cu-thangthat-si-ko-seh.json
 ```
 
 Tonic Studio does not yet implement remote URL imports. Until it does, download an individual JSON document and use its file importer.
@@ -29,7 +29,7 @@ Tonic Studio does not yet implement remote URL imports. Until it does, download 
 - `styles.css` provides the landing page presentation.
 - `scripts/` contains validation and deterministic generation tooling.
 
-The included example is synthetic documentation data, not an authoritative hymn transcription.
+The published hymn URLs are stable identifiers; ordinary content corrections should keep the filename unchanged.
 
 ## Local development
 

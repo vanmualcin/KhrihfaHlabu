@@ -9,6 +9,7 @@ export const hymnDirectory = path.join(root, 'hymns')
 export const indexPath = path.join(root, 'index.json')
 export const landingPath = path.join(root, 'index.html')
 export const publicBaseUrl = 'https://khrihfahlabu.mualcin.com'
+export const tonicStudioImportBaseUrl = 'https://tonicstudio.mualcin.com?import='
 const kebabPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export async function readJson(file) {
@@ -120,6 +121,9 @@ export async function buildLibrary(options) {
 
 export const serialize = (value) => `${JSON.stringify(value, null, 2)}\n`
 
+const hymnUrl = (id) => `${publicBaseUrl}/hymns/${id}.json`
+const tonicStudioImportUrl = (id) => `${tonicStudioImportBaseUrl}${hymnUrl(id)}`
+
 const escapeHtml = (value) => String(value)
   .replaceAll('&', '&amp;')
   .replaceAll('<', '&lt;')
@@ -128,9 +132,12 @@ const escapeHtml = (value) => String(value)
   .replaceAll("'", '&#39;')
 
 export function renderLandingPage(catalog) {
+  const sampleHymnUrl = catalog[0]
+    ? hymnUrl(catalog[0].id)
+    : hymnUrl('1-example-hymn')
   const rows = catalog.map((entry) => `            <tr>
               <td>${escapeHtml(entry.number ?? '—')}</td>
-              <th scope="row"><a href="./hymns/${entry.id}.json">${escapeHtml(entry.title)}</a></th>
+              <th scope="row"><a href="${tonicStudioImportUrl(entry.id)}">${escapeHtml(entry.title)}</a></th>
               <td>${escapeHtml(entry.composer || 'Unknown')}</td>
               <td>${escapeHtml(entry.key)}</td>
               <td>${escapeHtml(entry.language)}</td>
@@ -160,7 +167,7 @@ export function renderLandingPage(catalog) {
         <h2 id="import-title">Import into Tonic Studio</h2>
         <div class="instructions">
           <article><h3>Import the complete library</h3><p>In Tonic Studio, choose import from URL and paste the library address. Tonic Studio will read every hymn URL in the index.</p><div class="url"><code>${publicBaseUrl}/index.json</code></div></article>
-          <article><h3>Import one hymn</h3><p>Open a hymn from the catalog, copy its JSON address, and paste that address into Tonic Studio’s URL importer.</p><div class="url"><code>${publicBaseUrl}/hymns/example-hymn.json</code></div></article>
+          <article><h3>Import one hymn</h3><p>Open a hymn from the catalog, copy its JSON address, and paste that address into Tonic Studio’s URL importer.</p><div class="url"><code>${sampleHymnUrl}</code></div></article>
         </div>
         <p class="note">Remote URL import is planned for Tonic Studio. Until it is available, download an individual JSON file and use Tonic Studio’s file importer.</p>
       </section>

@@ -3,13 +3,13 @@ import { mkdtemp, rm, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
-import { buildCatalog, buildLibrary, indexIntegrityErrors, readJson, renderLandingPage, root, serialize, sortCatalog, validators } from '../scripts/lib.mjs'
+import { buildCatalog, buildLibrary, hymnFiles, indexIntegrityErrors, readJson, renderLandingPage, root, serialize, sortCatalog, validators } from '../scripts/lib.mjs'
 
-const examplePath = path.join(root, 'hymns/example-hymn.json')
+const examplePath = async () => (await hymnFiles())[0]
 
 test('valid hymn and library documents pass their schemas', async () => {
   const validate = await validators()
-  assert.equal(validate.hymn(await readJson(examplePath)), true)
+  assert.equal(validate.hymn(await readJson(await examplePath())), true)
   assert.equal(validate.library(await readJson(path.join(root, 'index.json'))), true)
 })
 
@@ -23,7 +23,7 @@ test('malformed JSON reports its file', async () => {
 
 test('invalid hymn structure and executable URL schemes fail schema validation', async () => {
   const validate = await validators()
-  const hymn = await readJson(examplePath)
+  const hymn = await readJson(await examplePath())
   assert.equal(validate.hymn({ ...hymn, parts: [] }), false)
   const library = await readJson(path.join(root, 'index.json'))
   library[0] = 'javascript:alert(1)'
@@ -59,8 +59,18 @@ test('generated index matches the committed index exactly', async () => {
 })
 
 test('landing page is generated from escaped hymn metadata', async () => {
-  const html = renderLandingPage(await buildCatalog())
-  assert.match(html, /Example Hymn/)
+  const html = renderLandingPage([
+    {
+      id: 'example-hymn',
+      title: 'Example <script> Hymn',
+      composer: 'A & B',
+      key: 'C',
+      language: 'Hakha',
+      number: 1,
+    }
+  ])
+  assert.match(html, /Example &lt;script&gt; Hymn/)
+  assert.match(html, /https:\/\/tonicstudio\.mualcin\.com\?import=https:\/\/khrihfahlabu\.mualcin\.com\/hymns\/example-hymn\.json/)
   assert.match(html, /<th scope="col">Doh<\/th>/)
   assert.equal(html.includes('<script>'), false)
 })
