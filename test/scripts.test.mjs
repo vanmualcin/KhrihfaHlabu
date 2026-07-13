@@ -3,7 +3,7 @@ import { mkdtemp, rm, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
-import { buildCatalog, buildLibrary, hymnFiles, indexIntegrityErrors, readJson, renderLandingPage, root, serialize, sortCatalog, tonicStudioIndexImportUrl, validators } from '../scripts/lib.mjs'
+import { buildCatalog, buildLibrary, hymnFiles, indexIntegrityErrors, publicBaseUrl, readJson, renderLandingPage, root, serialize, sortCatalog, tonicStudioImportBaseUrl, tonicStudioIndexImportUrl, validators } from '../scripts/lib.mjs'
 
 const examplePath = async () => (await hymnFiles())[0]
 
@@ -78,7 +78,7 @@ test('landing page is generated from escaped hymn metadata', async () => {
     }
   ])
   assert.match(html, /Example &lt;script&gt; Hymn/)
-  assert.match(html, /https:\/\/tonicstudio\.mualcin\.com\?import=https:\/\/khrihfahlabu\.mualcin\.com\/hymns\/example-hymn\.json/)
+  assert(html.includes(`href="${tonicStudioImportBaseUrl}${publicBaseUrl}/hymns/example-hymn.json"`))
   assert(html.includes(`href="${tonicStudioIndexImportUrl}"`))
   assert.match(html, />Import all hymns in Tonic Studio<\/a>/)
   assert.match(html, /<th scope="col">Doh<\/th>/)
