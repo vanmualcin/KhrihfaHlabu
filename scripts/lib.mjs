@@ -10,6 +10,8 @@ export const indexPath = path.join(root, 'index.json')
 export const landingPath = path.join(root, 'index.html')
 export const publicBaseUrl = 'https://khrihfahlabu.mualcin.com'
 export const tonicStudioImportBaseUrl = 'https://tonicstudio.mualcin.com?import='
+export const libraryIndexUrl = `${publicBaseUrl}/index.json`
+export const tonicStudioIndexImportUrl = `https://tonicstudio.mualcin.com?import_by_index=${libraryIndexUrl}`
 const kebabPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export async function readJson(file) {
@@ -159,8 +161,9 @@ export function renderLandingPage(catalog) {
     <main class="wrap">
       <section class="import-card" aria-labelledby="import-title">
         <h2 id="import-title">Import the complete library</h2>
-        <p>In Tonic Studio, choose import from URL and paste the library address. Tonic Studio will read every hymn URL in the index.</p>
-        <div class="url"><code>${publicBaseUrl}/index.json</code></div>
+        <p>Open the complete hymn library directly in Tonic Studio.</p>
+        <a class="import-button" href="${tonicStudioIndexImportUrl}">Import all hymns in Tonic Studio</a>
+        <div class="url"><code>${libraryIndexUrl}</code></div>
       </section>
       <section aria-label="Hymn catalog">
         <div class="table-wrap"><table>

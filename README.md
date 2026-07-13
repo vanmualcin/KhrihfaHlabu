@@ -9,16 +9,16 @@ Visit `https://khrihfahlabu.mualcin.com` for import instructions and the browsab
 Import the complete collection using:
 
 ```text
-https://khrihfahlabu.mualcin.com/index.json
+https://tonicstudio.mualcin.com?import_by_index=https://khrihfahlabu.mualcin.com/index.json
 ```
 
-`index.json` is a plain JSON array containing the absolute HTTPS URL of every published hymn. To import one hymn, use its individual URL:
+The landing page provides this as a one-click import action. Its `index.json` is a plain JSON array containing the absolute HTTPS URL of every published hymn. To import one hymn, use its individual URL:
 
 ```text
 https://khrihfahlabu.mualcin.com/hymns/1-pathian-cu-thangthat-si-ko-seh.json
 ```
 
-Tonic Studio does not yet implement remote URL imports. Until it does, download an individual JSON document and use its file importer.
+Tonic Studio recognizes `import_by_index` for a library URL and `import` for an individual hymn URL.
 
 ## Repository layout
 
