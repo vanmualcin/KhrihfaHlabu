@@ -1,0 +1,74 @@
+{
+  "format": "tonic-studio",
+  "version": 2,
+  "title": "Example Hymn",
+  "composer": "Synthetic example",
+  "metadata": {
+    "title": "Example Hymn",
+    "subtitle": "Documentation sample only",
+    "composer": "Synthetic example",
+    "hymnal": "KhrihfaHlabu samples",
+    "hymnNumber": "1",
+    "language": "cnh",
+    "copyright": "Original placeholder content; CC0-1.0",
+    "tags": "sample, documentation"
+  },
+  "key": "C",
+  "tempo": 92,
+  "beatsPerMeasure": 4,
+  "lyricsVoice": "Soprano",
+  "parts": [
+    {
+      "id": "sample-soprano",
+      "name": "Soprano",
+      "notes": [
+        { "id": "s1", "degree": 1, "accidental": 0, "octave": 0, "duration": 1, "lyric": "Sam-", "lyrics": ["Sam-"] },
+        { "id": "s2", "degree": 3, "accidental": 0, "octave": 0, "duration": 1, "lyric": "ple", "lyrics": ["ple"] },
+        { "id": "s3", "degree": 5, "accidental": 0, "octave": 0, "duration": 2, "lyric": "song", "lyrics": ["song"] }
+      ],
+      "muted": false,
+      "verseCount": 1,
+      "lyricText": ["Sam-ple song"]
+    },
+    {
+      "id": "sample-alto",
+      "name": "Alto",
+      "notes": [
+        { "id": "a1", "degree": 1, "accidental": 0, "octave": 0, "duration": 1, "lyric": "" },
+        { "id": "a2", "degree": 1, "accidental": 0, "octave": 0, "duration": 1, "lyric": "" },
+        { "id": "a3", "degree": 3, "accidental": 0, "octave": 0, "duration": 2, "lyric": "" }
+      ],
+      "muted": false
+    },
+    {
+      "id": "sample-tenor",
+      "name": "Tenor",
+      "notes": [
+        { "id": "t1", "degree": 5, "accidental": 0, "octave": 0, "duration": 1, "lyric": "" },
+        { "id": "t2", "degree": 5, "accidental": 0, "octave": 0, "duration": 1, "lyric": "" },
+        { "id": "t3", "degree": 5, "accidental": 0, "octave": 0, "duration": 2, "lyric": "" }
+      ],
+      "muted": false
+    },
+    {
+      "id": "sample-bass",
+      "name": "Bass",
+      "notes": [
+        { "id": "b1", "degree": 1, "accidental": 0, "octave": 0, "duration": 1, "lyric": "" },
+        { "id": "b2", "degree": 1, "accidental": 0, "octave": 0, "duration": 1, "lyric": "" },
+        { "id": "b3", "degree": 1, "accidental": 0, "octave": 0, "duration": 2, "lyric": "" }
+      ],
+      "muted": false
+    }
+  ],
+  "sections": [
+    { "id": "sample-verse", "kind": "verse", "label": "Verse 1", "startMeasure": 0, "startBeat": 0 },
+    { "id": "sample-chorus", "kind": "chorus", "label": "Refrain", "startMeasure": 0, "startBeat": 2, "lyricText": "ple song" }
+  ],
+  "measureDirectives": [
+    { "measure": 0, "kind": "repeat-begin" },
+    { "measure": 0, "kind": "repeat-end" }
+  ],
+  "playbackOrder": "Verse 1, Refrain",
+  "updatedAt": "2026-07-12T00:00:00Z"
+}

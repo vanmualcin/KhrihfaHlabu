@@ -1,0 +1,20 @@
+{
+  "name": "khrihfahlabu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A public Chin Christian hymn library for Tonic Studio.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:index": "node scripts/build-index.mjs",
+    "check:index": "node scripts/build-index.mjs --check",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

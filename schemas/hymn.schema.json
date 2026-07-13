@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://khrihfahlabu.mualcin.com/schemas/hymn.schema.json",
+  "title": "Tonic Studio hymn",
+  "description": "The Tonic Studio version 2 score document accepted by its current importer.",
+  "type": "object",
+  "required": ["format", "version", "title", "composer", "metadata", "key", "tempo", "beatsPerMeasure", "parts", "sections", "measureDirectives", "updatedAt"],
+  "properties": {
+    "format": { "const": "tonic-studio" },
+    "version": { "const": 2 },
+    "title": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "composer": { "type": "string", "maxLength": 300 },
+    "metadata": {
+      "type": "object",
+      "required": ["title", "composer"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "subtitle": { "type": "string", "maxLength": 300 },
+        "composer": { "type": "string", "maxLength": 300 },
+        "arranger": { "type": "string", "maxLength": 300 },
+        "translator": { "type": "string", "maxLength": 300 },
+        "hymnal": { "type": "string", "maxLength": 300 },
+        "hymnNumber": { "type": "string", "maxLength": 40 },
+        "language": { "type": "string", "minLength": 2, "maxLength": 35 },
+        "copyright": { "type": "string", "maxLength": 1000 },
+        "tags": { "type": "string", "maxLength": 1000 }
+      },
+      "additionalProperties": { "type": "string", "maxLength": 2000 },
+      "maxProperties": 50
+    },
+    "key": { "enum": ["C", "D♭", "D", "E♭", "E", "F", "F♯", "G", "A♭", "A", "B♭", "B"] },
+    "tempo": { "type": "number", "minimum": 40, "maximum": 220 },
+    "beatsPerMeasure": { "enum": [2, 3, 4, 6] },
+    "lyricsVoice": { "$ref": "#/$defs/voiceName" },
+    "parts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": { "$ref": "#/$defs/part" }
+    },
+    "sections": {
+      "type": "array",
+      "maxItems": 500,
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "measureDirectives": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": { "$ref": "#/$defs/directive" }
+    },
+    "playbackOrder": { "type": "string", "maxLength": 2000 },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "voiceName": { "enum": ["Soprano", "Alto", "Tenor", "Bass"] },
+    "note": {
+      "type": "object",
+      "required": ["id", "degree", "accidental", "octave", "duration", "lyric"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "isRest": { "type": "boolean" },
+        "degree": { "type": "integer", "minimum": 1, "maximum": 7 },
+        "accidental": { "enum": [-1, 0, 1] },
+        "octave": { "enum": [-2, -1, 0, 1, 2] },
+        "duration": { "enum": [0.25, 0.375, 0.5, 0.75, 1, 1.5, 2, 3, 4, 6] },
+        "lyric": { "type": "string", "maxLength": 500 },
+        "lyrics": { "type": "array", "maxItems": 100, "items": { "type": "string", "maxLength": 500 } },
+        "continuesSyllable": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "part": {
+      "type": "object",
+      "required": ["id", "name", "notes", "muted"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "name": { "$ref": "#/$defs/voiceName" },
+        "notes": { "type": "array", "maxItems": 100000, "items": { "$ref": "#/$defs/note" } },
+        "muted": { "type": "boolean" },
+        "verseCount": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "lyricText": { "type": "array", "maxItems": 100, "items": { "type": "string", "maxLength": 100000 } }
+      },
+      "additionalProperties": false
+    },
+    "section": {
+      "type": "object",
+      "required": ["id", "kind", "label", "startMeasure"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "kind": { "enum": ["verse", "chorus", "bridge", "intro", "outro"] },
+        "label": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "startMeasure": { "type": "integer", "minimum": 0 },
+        "startBeat": { "type": "number", "minimum": 0 },
+        "endMeasure": { "type": "integer", "minimum": 0 },
+        "lyricText": { "type": "string", "maxLength": 100000 }
+      },
+      "additionalProperties": false
+    },
+    "directive": {
+      "type": "object",
+      "required": ["measure", "kind"],
+      "properties": {
+        "measure": { "type": "integer", "minimum": 0 },
+        "kind": { "enum": ["repeat-begin", "repeat-end", "first-ending", "second-ending"] }
+      },
+      "additionalProperties": false
+    }
+  }
+}

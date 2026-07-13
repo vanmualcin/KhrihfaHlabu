@@ -1,0 +1,18 @@
+{
+  "format": "tonic-studio-library",
+  "schemaVersion": 1,
+  "name": "KhrihfaHlabu",
+  "description": "A public collection of Chin Christian hymns for Tonic Studio.",
+  "language": "cnh",
+  "updatedAt": "2026-07-12T00:00:00Z",
+  "hymns": [
+    {
+      "id": "example-hymn",
+      "title": "Example Hymn",
+      "number": 1,
+      "language": "cnh",
+      "revision": 1,
+      "url": "./hymns/example-hymn.json"
+    }
+  ]
+}
