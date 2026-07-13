@@ -1,6 +1,6 @@
 # KhrihfaHlabu
 
-KhrihfaHlabu (“Christian Songbook” in Chin) is a public, version-controlled collection of Chin Christian hymn data designed for Tonic Studio. It is a static hymn library and documentation site—not the Tonic Studio application or an API.
+KhrihfaHlabu is a public, version-controlled collection of Chin Christian hymn data designed for Tonic Studio. It is a static hymn library and documentation site—not the Tonic Studio application or an API.
 
 - [Open Tonic Studio](https://tonicstudio.mualcin.com)
 - [Browse the Khrihfa Hlabu hymn library](https://khrihfahlabu.mualcin.com)
