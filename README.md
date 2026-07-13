@@ -2,7 +2,7 @@
 
 KhrihfaHlabu is a public, version-controlled collection of Chin Christian hymn data designed for Tonic Studio. It is a static hymn library and documentation site—not the Tonic Studio application or an API.
 
-- [Open Tonic Studio](https://tonicstudio.mualcin.com)
+- [Open Tonic Studio](https://tonicsolfege.mualcin.com)
 - [Browse the Khrihfa Hlabu hymn library](https://khrihfahlabu.mualcin.com)
 
 ## Using the library
@@ -10,7 +10,7 @@ KhrihfaHlabu is a public, version-controlled collection of Chin Christian hymn d
 Import the complete collection using:
 
 ```text
-https://tonicstudio.mualcin.com?import_by_index=https://khrihfahlabu.mualcin.com/index.json
+https://tonicsolfege.mualcin.com?import_by_index=https://khrihfahlabu.mualcin.com/index.json
 ```
 
 The landing page provides this as a one-click import action. Its `index.json` is a plain JSON array containing the absolute HTTPS URL of every published hymn. To import one hymn, use its individual URL:
