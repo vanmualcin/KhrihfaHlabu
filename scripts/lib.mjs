@@ -9,9 +9,9 @@ export const hymnDirectory = path.join(root, 'hymns')
 export const indexPath = path.join(root, 'index.json')
 export const landingPath = path.join(root, 'index.html')
 export const publicBaseUrl = 'https://khrihfahlabu.mualcin.com'
-export const tonicStudioImportBaseUrl = 'https://tonicstudio.mualcin.com?import='
+export const tonicStudioImportBaseUrl = 'https://tonicsolfege.mualcin.com?import='
 export const libraryIndexUrl = `${publicBaseUrl}/index.json`
-export const tonicStudioIndexImportUrl = `https://tonicstudio.mualcin.com?import_by_index=${libraryIndexUrl}`
+export const tonicStudioIndexImportUrl = `https://tonicsolfege.mualcin.com?import_by_index=${libraryIndexUrl}`
 const kebabPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export async function readJson(file) {
