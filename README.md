@@ -50,7 +50,7 @@ npm test
 1. Export or create a valid Tonic Studio version 2 score.
 2. Choose a permanent lowercase kebab-case ID, such as `pathian-ka-fak`.
 3. Save it as `hymns/pathian-ka-fak.json`; the filename is its identity and stable URL.
-4. Supply `metadata.title`, `metadata.composer`, and `metadata.language`. Add a numeric `metadata.hymnNumber` when known.
+4. Preserve the exported top-level `uuid`, and supply `metadata.title`, `metadata.composer`, and `metadata.language`. Add a numeric `metadata.hymnNumber` when known.
 5. Run the validation, build, index check, and test commands above.
 6. Submit the hymn and both regenerated index files in a pull request.
 
@@ -58,7 +58,7 @@ For ordinary corrections, keep the filename unchanged. Hymn numbers can vary bet
 
 ## Format compatibility
 
-The hymn schema follows Tonic Studio’s current `Score` interface and importer: `format: "tonic-studio"`, version 2, metadata, key and meter, SATB parts, note-level lyric syllables, sections/refrains, repeat directives, and playback order. The catalog’s “Doh” column displays each score’s `key` value.
+The hymn schema follows Tonic Studio’s current `Score` interface and importer: `format: "tonic-studio"`, version 2, UUID identity, metadata, key and meter, SATB parts, note-level lyric syllables, sections/refrains, repeat directives, and playback order. The catalog’s “Doh” column displays each score’s `key` value.
 
 Top-level catalog fields are not added to score documents because they are not part of Tonic Studio’s current format. The simplified library index intentionally contains only hymn URLs.
 

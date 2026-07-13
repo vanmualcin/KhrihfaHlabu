@@ -30,6 +30,14 @@ test('invalid hymn structure and executable URL schemes fail schema validation',
   assert.equal(validate.library(library), false)
 })
 
+test('hymns require a valid UUID', async () => {
+  const validate = await validators()
+  const hymn = await readJson(await examplePath())
+  assert.equal(validate.hymn({ ...hymn, uuid: 'not-a-uuid' }), false)
+  const { uuid: _uuid, ...withoutUuid } = hymn
+  assert.equal(validate.hymn(withoutUuid), false)
+})
+
 test('duplicate URLs are detected', () => {
   const url = 'https://khrihfahlabu.mualcin.com/hymns/a.json'
   const errors = indexIntegrityErrors([url, url], ['/tmp/a.json'])

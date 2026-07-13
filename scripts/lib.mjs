@@ -58,6 +58,7 @@ export function catalogEntry(file, hymn) {
   if (hymn.composer !== hymn.metadata.composer) throw new Error(`${filename}: composer must match metadata.composer`)
   const entry = {
     id,
+    uuid: hymn.uuid,
     title: hymn.metadata.title,
     composer: hymn.metadata.composer,
     key: hymn.key,
@@ -109,9 +110,12 @@ export async function buildCatalog({ directory = hymnDirectory } = {}) {
     }
   }
   const ids = new Set()
+  const uuids = new Set()
   for (const entry of entries) {
     if (ids.has(entry.id)) errors.push(`duplicate hymn id: ${entry.id}`)
+    if (uuids.has(entry.uuid)) errors.push(`duplicate hymn UUID: ${entry.uuid}`)
     ids.add(entry.id)
+    uuids.add(entry.uuid)
   }
   if (errors.length) throw new Error(errors.join('\n'))
   return sortCatalog(entries)

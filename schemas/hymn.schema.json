@@ -4,10 +4,11 @@
   "title": "Tonic Studio hymn",
   "description": "The Tonic Studio version 2 score document accepted by its current importer.",
   "type": "object",
-  "required": ["format", "version", "title", "composer", "metadata", "key", "tempo", "beatsPerMeasure", "parts", "sections", "measureDirectives", "updatedAt"],
+  "required": ["format", "version", "uuid", "title", "composer", "metadata", "key", "tempo", "beatsPerMeasure", "parts", "sections", "measureDirectives", "updatedAt"],
   "properties": {
     "format": { "const": "tonic-studio" },
     "version": { "const": 2 },
+    "uuid": { "type": "string", "format": "uuid" },
     "title": { "type": "string", "minLength": 1, "maxLength": 300 },
     "composer": { "type": "string", "maxLength": 300 },
     "metadata": {
