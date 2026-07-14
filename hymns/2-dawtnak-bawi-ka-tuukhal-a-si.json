@@ -1,0 +1,1474 @@
+{
+  "format": "tonic-solfege",
+  "version": 2,
+  "uuid": "52b1f1c7-4a51-41a8-aadc-52bf8784976a",
+  "title": "Dawtnak Bawi Ka Tuukhal A Si",
+  "composer": "Herry W. Baker",
+  "metadata": {
+    "title": "Dawtnak Bawi Ka Tuukhal A Si",
+    "subtitle": "The King of Love My Shepherd Is",
+    "composer": "Herry W. Baker",
+    "arranger": "John B. Dykes",
+    "hymnal": "Khrihfa Hlabu",
+    "hymnNumber": "2",
+    "language": "Hakha"
+  },
+  "key": "G",
+  "tempo": 92,
+  "beatsPerMeasure": 4,
+  "lyricsVoice": "Soprano",
+  "parts": [
+    {
+      "id": "wvacgxxt",
+      "name": "Soprano",
+      "notes": [
+        {
+          "id": "gfa92pql",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true,
+          "lyrics": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "fusmjexu",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true,
+          "lyrics": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "kqjl6nsb",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true,
+          "lyrics": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "96dt7ss7",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "Dawt",
+          "lyrics": [
+            "Dawt",
+            "Nun",
+            "Mi",
+            "Thih",
+            "Ka"
+          ]
+        },
+        {
+          "id": "gr56bnz4",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "nak",
+          "lyrics": [
+            "nak",
+            "nak",
+            "sual",
+            "nak",
+            "hmai"
+          ]
+        },
+        {
+          "id": "guw797b9",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "Bawi",
+          "lyrics": [
+            "Bawi",
+            "ti",
+            "lam",
+            "khor",
+            "ah"
+          ]
+        },
+        {
+          "id": "8e9wyqp4",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "ka",
+          "lyrics": [
+            "ka",
+            "va",
+            "palh",
+            "fah",
+            "ca"
+          ]
+        },
+        {
+          "id": "zls0hkhi",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "Tuu",
+          "lyrics": [
+            "Tuu",
+            "a",
+            "ka",
+            "nak",
+            "buai"
+          ]
+        },
+        {
+          "id": "4n3a24sj",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "kha",
+          "lyrics": [
+            "kha",
+            "luan",
+            "tlau",
+            "ka",
+            "kha"
+          ]
+        },
+        {
+          "id": "ts5j9q6f",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "a",
+          "lyrics": [
+            "a",
+            "nak",
+            "sual",
+            "ṭih",
+            "na"
+          ]
+        },
+        {
+          "id": "d1y5ie43",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "si,",
+          "lyrics": [
+            "si,",
+            "ah,",
+            "tawn,",
+            "lo,",
+            "hun,"
+          ]
+        },
+        {
+          "id": "ezz2gccm",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": "A",
+          "lyrics": [
+            "A",
+            "Tlanh",
+            "Si",
+            "Nang",
+            "Thlua"
+          ]
+        },
+        {
+          "id": "40jb7to1",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1.5,
+          "lyric": "ṭhat",
+          "lyrics": [
+            "ṭhat",
+            "cia",
+            "hmanh",
+            "ka",
+            "chuah"
+          ]
+        },
+        {
+          "id": "lm9ilza6",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "nak",
+          "lyrics": [
+            "nak",
+            "ka",
+            "seh",
+            "sin",
+            "ngan"
+          ]
+        },
+        {
+          "id": "f3n0um78",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": "a",
+          "lyrics": [
+            "a",
+            "thla",
+            "law",
+            "na",
+            "dam"
+          ]
+        },
+        {
+          "id": "sm3632vs",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "dong",
+          "lyrics": [
+            "dong",
+            "rau",
+            "dawt",
+            "um",
+            "na"
+          ]
+        },
+        {
+          "id": "hzupw2co",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": "bal",
+          "lyrics": [
+            "bal",
+            "a",
+            "nak",
+            "ah",
+            "ka"
+          ]
+        },
+        {
+          "id": "vh52qn1e",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "lo,",
+          "lyrics": [
+            "lo,",
+            "hruai,",
+            "in,",
+            "cun,",
+            "pek,"
+          ]
+        },
+        {
+          "id": "z14wk3ax",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "A",
+          "lyrics": [
+            "A",
+            "Tlim",
+            "A",
+            "Nang",
+            "Maw"
+          ]
+        },
+        {
+          "id": "o64stt40",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "mi",
+          "lyrics": [
+            "mi",
+            "no",
+            "ka",
+            "mah",
+            "zei"
+          ]
+        },
+        {
+          "id": "vu2y09gf",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "ka",
+          "lyrics": [
+            "ka",
+            "ram",
+            "kawl",
+            "ṭhiang",
+            "tluk"
+          ]
+        },
+        {
+          "id": "3dffyf0v",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "",
+          "lyrics": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "continuesSyllable": true
+        },
+        {
+          "id": "jc0rsz5i",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "si,",
+          "lyrics": [
+            "si,",
+            "hring",
+            "i",
+            "ṭhunh",
+            "i"
+          ]
+        },
+        {
+          "id": "rlfidh66",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "zei",
+          "lyrics": [
+            "zei",
+            "dawh",
+            "a",
+            "ka",
+            "lung"
+          ]
+        },
+        {
+          "id": "eq4vfib1",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "ka",
+          "lyrics": [
+            "ka",
+            "khoh",
+            "ka",
+            "hna",
+            "lawmh"
+          ]
+        },
+        {
+          "id": "l9di1a97",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "bau",
+          "lyrics": [
+            "bau",
+            "nak",
+            "phawrh",
+            "ngam",
+            "nak"
+          ]
+        },
+        {
+          "id": "f0109gvi",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "",
+          "lyrics": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "continuesSyllable": true
+        },
+        {
+          "id": "xmtl8ckf",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "lo,",
+          "lyrics": [
+            "lo,",
+            "ah,",
+            "ṭhan,",
+            "nak,",
+            "dah,"
+          ]
+        },
+        {
+          "id": "iw66tkwt",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": "Ka",
+          "lyrics": [
+            "Ka",
+            "Van",
+            "Lung",
+            "Na",
+            "Na"
+          ]
+        },
+        {
+          "id": "bfbtaq1z",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1.5,
+          "lyric": "Bawi",
+          "lyrics": [
+            "Bawi",
+            "cung",
+            "lawm",
+            "vai",
+            "hrai"
+          ]
+        },
+        {
+          "id": "mdmgnf9o",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "a",
+          "lyrics": [
+            "a",
+            "rawl",
+            "in",
+            "lam",
+            "thiang"
+          ]
+        },
+        {
+          "id": "o9ndb7fr",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": "si",
+          "lyrics": [
+            "si",
+            "a",
+            "a",
+            "ka",
+            "in"
+          ]
+        },
+        {
+          "id": "3k9bwxg2",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "zung",
+          "lyrics": [
+            "zung",
+            "ka",
+            "ka",
+            "lam",
+            "a"
+          ]
+        },
+        {
+          "id": "wrlpvytb",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "zal",
+          "lyrics": [
+            "zal",
+            "pe",
+            "tlun",
+            "hruai",
+            "rung"
+          ]
+        },
+        {
+          "id": "zzhnb0jm",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "lyrics": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "continuesSyllable": true
+        },
+        {
+          "id": "mwbeagsz",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": "lai.",
+          "lyrics": [
+            "lai.",
+            "lai.",
+            "ter.",
+            "tu.",
+            "luang."
+          ]
+        }
+      ],
+      "muted": false,
+      "verseCount": 5,
+      "lyricText": [
+        "Dawt-nak Bawi ka Tuu-kha a-si,\nA ṭhat-nak a dong bal lo,\nA mi ka si, zei ka bau lo,\nKa Bawi a si zung-zal lai.",
+        "Nun-nak ti-va a luan-nak ah,\nTlanh cia ka thla-rau a hruai,\nTlim-no ram-hring dawh khoh-nak ah,\nVan-cung rawl a ka pe lai.",
+        "Mi-sual lam-palh ka tlau sual tawn,\nSi-hmanh-seh law dawt-nak in,\nA ka kawl i a ka phawrh ṭhan,\nLung-lawm in a ka tlun-ter.",
+        "Thih-nak khor fah-nak ka ṭih lo,\nNang ka sin na um ah-cun,\nNang-mah ṭhiang-ṭhunh ka hna-ngam-nak,\nNa vai-lam ka lam hruai-tu.",
+        "Ka hmai-ah ca-buai kha na hun,\nThlua-chuah ngan-dam na ka pek,\nMaw zei-tluk i lung-lawmh-nak dah,\nNa hrai thiang in a rung luang."
+      ]
+    },
+    {
+      "id": "126q4ouf",
+      "name": "Alto",
+      "notes": [
+        {
+          "id": "01n0el8p",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "5stwq0s2",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "hc6y2qvt",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "n5ve31yo",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "lj7jy87y",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "0zuw9jey",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "grh7cwpq",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "6kkjgv61",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "wo2ityqk",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "ikcmd9bc",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "1jnno85t",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "ebriadvp",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "xd2627fm",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1.5,
+          "lyric": ""
+        },
+        {
+          "id": "qnctoz8w",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "mlfoap8w",
+          "degree": 4,
+          "accidental": -1,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "re9f45y1",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "9blalmk5",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "nl8y3lgb",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "og81rcjd",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "cw7mzo9s",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "48nqfril",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "36iuxrvf",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "6t6n9cb5",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "ec9bz48g",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "zqi272e5",
+          "degree": 5,
+          "accidental": -1,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "8j8hqj3j",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "yfck4rnq",
+          "degree": 3,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "9tzbmhhu",
+          "degree": 4,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "2cfpqdkl",
+          "degree": 4,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1.5,
+          "lyric": ""
+        },
+        {
+          "id": "9yyi358k",
+          "degree": 4,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "mhoqjy10",
+          "degree": 4,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "65xtcm9s",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "nko32hfk",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 2,
+          "lyric": ""
+        },
+        {
+          "id": "3xfhosp8",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": ""
+        }
+      ],
+      "muted": false
+    },
+    {
+      "id": "qpw59elm",
+      "name": "Tenor",
+      "notes": [
+        {
+          "id": "4d76u9dj",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "b4k6ibu9",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "dj3ojr9y",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "xqe60t1w",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "kvnosyxo",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "i8ca9wzx",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "f1afdn2b",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "ytbuv0pn",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "iteq4d92",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "leqqhtwd",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "tfz22dmp",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "7r6mw44t",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "m6xpaxee",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "lfvdyqgs",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "gb75tgkg",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "v2k9fu2b",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "jdqd1yeg",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "62zwn10u",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "smgqt75a",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "t778ejfh",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1.5,
+          "lyric": ""
+        },
+        {
+          "id": "mf1p72b0",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "wcr7o4as",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "ikhh4647",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "n5odpx29",
+          "degree": 6,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "2g9vi07m",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "edkl07ec",
+          "degree": 5,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "cdoykb9w",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "gx9p4owb",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "65hrcgqq",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "w3405um4",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "1z8fz566",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "0kdat4qv",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1.5,
+          "lyric": ""
+        },
+        {
+          "id": "1c8n7h6p",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "7nh3behh",
+          "degree": 2,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "o3owirnl",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "5mjepfg1",
+          "degree": 4,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": ""
+        },
+        {
+          "id": "5j7xew4h",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": ""
+        }
+      ],
+      "muted": false
+    },
+    {
+      "id": "78qzo8gn",
+      "name": "Bass",
+      "notes": [
+        {
+          "id": "vmfl844u",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 2,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "tufoaljd",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": "",
+          "isRest": true
+        },
+        {
+          "id": "qeabfmek",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "dsh2fnpc",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "fy8upl3t",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "41pgs63p",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "mtz1u8lt",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "0y6zybn0",
+          "degree": 3,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "q7mrq5ao",
+          "degree": 4,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "48ra7dcn",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "icz7v9k1",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "q84vy1ko",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "joqnzi61",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "1t9csevx",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "fki94byg",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "18hiqkka",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "wnfjc7e8",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "fxw38k5z",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 2,
+          "lyric": ""
+        },
+        {
+          "id": "0rof570w",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "ugvyjfov",
+          "degree": 3,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "hewrsx4c",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "7e2lgzew",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "3hqhukmm",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "0jsrd8jl",
+          "degree": 1,
+          "accidental": 0,
+          "octave": 0,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "utbzyw3p",
+          "degree": 7,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "s8z16j1h",
+          "degree": 3,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "k7y6jb4b",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "on9tsm4j",
+          "degree": 6,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "h6hu4mwd",
+          "degree": 4,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": "",
+          "continuesSyllable": true
+        },
+        {
+          "id": "sfihox1l",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1.5,
+          "lyric": ""
+        },
+        {
+          "id": "4v2frbx5",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 0.5,
+          "lyric": ""
+        },
+        {
+          "id": "tl9dx3ig",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "qtsm3u1t",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 1,
+          "lyric": ""
+        },
+        {
+          "id": "hnp879w9",
+          "degree": 5,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 2,
+          "lyric": ""
+        },
+        {
+          "id": "siyvhfb6",
+          "degree": 1,
+          "accidental": 0,
+          "octave": -1,
+          "duration": 2,
+          "lyric": ""
+        }
+      ],
+      "muted": false
+    }
+  ],
+  "sections": [],
+  "measureDirectives": [],
+  "measureWidths": {},
+  "updatedAt": "2026-07-14T04:14:50.966Z"
+}

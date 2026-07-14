@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://khrihfahlabu.mualcin.com/schemas/hymn.schema.json",
-  "title": "Tonic Studio hymn",
-  "description": "The Tonic Studio version 2 score document accepted by its current importer.",
+  "title": "Tonic Solfege hymn",
+  "description": "The Tonic Solfege version 2 score document accepted by its current importer.",
   "type": "object",
   "required": ["format", "version", "uuid", "title", "composer", "metadata", "key", "tempo", "beatsPerMeasure", "parts", "sections", "measureDirectives", "updatedAt"],
   "properties": {
-    "format": { "const": "tonic-studio" },
+    "format": { "const": "tonic-solfege" },
     "version": { "const": 2 },
     "uuid": { "type": "string", "format": "uuid" },
     "title": { "type": "string", "minLength": 1, "maxLength": 300 },
@@ -48,6 +48,14 @@
       "type": "array",
       "maxItems": 1000,
       "items": { "$ref": "#/$defs/directive" }
+    },
+    "measureWidths": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      },
+      "maxProperties": 10000
     },
     "playbackOrder": { "type": "string", "maxLength": 2000 },
     "updatedAt": { "type": "string", "format": "date-time" }
