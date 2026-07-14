@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "A public Chin Christian hymn library for Tonic Studio.",
+  "description": "A public Chin Christian hymn library for Tonic Solfège.",
   "engines": {
     "node": ">=22"
   },

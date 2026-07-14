@@ -5,8 +5,8 @@ Thank you for helping preserve Chin Christian hymn texts and notation carefully.
 ## Hymn files
 
 - Name each file with a stable lowercase kebab-case ID: `hymns/pathian-ka-fak.json`.
-- Export canonical Tonic Studio version 2 JSON whenever possible.
-- Preserve the valid top-level UUID created by Tonic Studio. Never reuse one hymn's UUID for a different hymn.
+- Export canonical Tonic Solfège version 2 JSON whenever possible.
+- Preserve the valid top-level UUID created by Tonic Solfège. Never reuse one hymn's UUID for a different hymn.
 - Keep the existing filename for corrections. Hymn numbers are edition-specific and are not permanent IDs.
 - Include catalogable metadata: title, composer (an empty string is allowed when unknown), and language. Use ISO 639-3 `cnh` for Hakha Chin. A hymn number, if supplied, must be a positive integer string.
 - State the known rights basis in `metadata.copyright`: public domain, original work, or permission from the rights holder. Explain permission in the pull request without publishing private personal information.

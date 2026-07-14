@@ -154,7 +154,7 @@ export function renderLandingPage(catalog) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A public collection of Chin Christian hymns for Tonic Studio.">
+    <meta name="description" content="A public collection of Chin Christian hymns for Tonic Solfège.">
     <title>KhrihfaHlabu — Chin Christian Songbook</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -165,8 +165,8 @@ export function renderLandingPage(catalog) {
     <main class="wrap">
       <section class="import-card" aria-labelledby="import-title">
         <h2 id="import-title">Import the complete library</h2>
-        <p>Open the complete hymn library directly in Tonic Studio.</p>
-        <a class="import-button" href="${tonicSolfegeIndexImportUrl}">Import all hymns in Tonic Studio</a>
+        <p>Open the complete hymn library directly in Tonic Solfège.</p>
+        <a class="import-button" href="${tonicSolfegeIndexImportUrl}">Import all hymns in Tonic Solfège</a>
         <div class="url"><code>${libraryIndexUrl}</code></div>
       </section>
       <section aria-label="Hymn catalog">

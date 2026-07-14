@@ -80,7 +80,7 @@ test('landing page is generated from escaped hymn metadata', async () => {
   assert.match(html, /Example &lt;script&gt; Hymn/)
   assert.match(html, /https:\/\/tonicsolfege\.mualcin\.com\?import=https:\/\/khrihfahlabu\.mualcin\.com\/hymns\/example-hymn\.json/)
   assert(html.includes(`href="${tonicSolfegeIndexImportUrl}"`))
-  assert.match(html, />Import all hymns in Tonic Studio<\/a>/)
+  assert.match(html, />Import all hymns in Tonic Solfège<\/a>/)
   assert.match(html, /<th scope="col">Doh<\/th>/)
   assert.equal(html.includes('<script>'), false)
 })

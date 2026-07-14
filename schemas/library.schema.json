@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://khrihfahlabu.mualcin.com/schemas/library.schema.json",
   "title": "KhrihfaHlabu hymn URL index",
-  "description": "A deterministic list of absolute HTTPS URLs for Tonic Studio hymn documents.",
+  "description": "A deterministic list of absolute HTTPS URLs for Tonic Solfège hymn documents.",
   "type": "array",
   "uniqueItems": true,
   "maxItems": 100000,
